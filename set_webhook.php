@@ -21,7 +21,9 @@ $webhookUrl = $argv[1] ?? '';
 try {
     $bot = new BotApi($token);
 
-    $bot->setWebhook($webhookUrl);
+    $result = $bot->setWebhook($webhookUrl);
+
+    echo $result;
 } catch (Exception $e) {
     // create a log channel
     $log = new Logger('Telegram Bot');
