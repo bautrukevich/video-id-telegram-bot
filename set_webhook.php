@@ -19,7 +19,7 @@ $token = $_ENV['TELEGRAM_TOKEN'];
 $webhookUrl = $argv[1] ?? '';
 
 try {
-    $bot = new BotApi('YOUR_BOT_API_TOKEN');
+    $bot = new BotApi($token);
 
     $bot->setWebhook($webhookUrl);
 } catch (Exception $e) {
