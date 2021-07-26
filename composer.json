@@ -1,0 +1,19 @@
+{
+    "name": "siarhei/fileidbot",
+    "authors": [
+        {
+            "name": "Siarhei Bautrukevich",
+            "email": "s.boltrukevich@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bot\\": "./src/"
+        }
+    },
+    "require": {
+        "telegram-bot/api": "^2.3",
+        "vlucas/phpdotenv": "^5.3",
+        "monolog/monolog": "^2.3"
+    }
+}
